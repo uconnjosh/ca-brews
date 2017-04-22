@@ -1,3 +1,4 @@
+Search: {{input type="text" value=nameFilter size='40'}}
 <table>
   <tr>
     <th>Brewery</th>
@@ -8,7 +9,7 @@
     <th>Srm</th>
     <th>Tags</th>
   </tr>
-  {{#each model as |beer|}}
+  {{#each filteredBeer as |beer|}}
     <tr>
       <td>{{beer.Brewery}}</td>
       <td>{{beer.City}}</td>
