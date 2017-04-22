@@ -7,5 +7,6 @@ export default DS.Model.extend({
   Abv: DS.attr('string'),
   Ibu: DS.attr('string'),
   Srm: DS.attr('string'),
-  Tags: DS.attr('string')
+  Tags: DS.attr('string'),
+  tags: DS.hasMany('tag')
 });
