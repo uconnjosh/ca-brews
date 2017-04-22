@@ -1,1 +1,10 @@
-<h1>I will be a list of beers</h1>
+{{#each model as |beer|}}
+  {{beer.Brewery}}<br />
+  {{beer.City}}<br />
+  {{beer.Name}}<br />
+  {{beer.Abv}}<br />
+  {{beer.Ibu}}<br />
+  {{beer.Srm}}<br />
+  {{beer.Tags}}
+{{/each}}
+
