@@ -1,10 +1,23 @@
-{{#each model as |beer|}}
-  {{beer.Brewery}}<br />
-  {{beer.City}}<br />
-  {{beer.Name}}<br />
-  {{beer.Abv}}<br />
-  {{beer.Ibu}}<br />
-  {{beer.Srm}}<br />
-  {{beer.Tags}}
-{{/each}}
+<table>
+  <tr>
+    <th>Brewery</th>
+    <th>City</th>
+    <th>Name</th>
+    <th>Abv</th>
+    <th>Ibu</th>
+    <th>Srm</th>
+    <th>Tags</th>
+  </tr>
+  {{#each model as |beer|}}
+    <tr>
+      <td>{{beer.Brewery}}</td>
+      <td>{{beer.City}}</td>
+      <td>{{beer.Name}}</td>
+      <td>{{beer.Abv}}</td>
+      <td>{{beer.Ibu}}</td>
+      <td>{{beer.Srm}}</td>
+      <td>{{beer.Tags}}</td>
+    </tr>
+  {{/each}}
+</table>
 
