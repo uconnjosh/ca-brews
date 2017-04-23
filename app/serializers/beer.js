@@ -11,7 +11,7 @@ export default DS.RESTSerializer.extend(DS.EmbeddedRecordsMixin, {
   },
   primaryKey: 'Name',
   attrs: {
-    Tags: { embedded: 'always' }
+    tags: { embedded: 'always' }
   }
 });
 
@@ -21,6 +21,6 @@ var tagObjects = function(beerObject) {
     return { "id": tag }
   });
 
-  beerObject["Tags"] = mapped_tags
+  beerObject["tags"] = mapped_tags
   return beerObject
 }
