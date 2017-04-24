@@ -1,0 +1,7 @@
+<h1>{{model.id}}</h1>
+Beer count: {{model.beers.length}}
+<br />
+<br />
+{{#each model.beers as |beer|}}
+  {{beer.Name}}<br />
+{{/each}}

@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('beers');
+
+  this.route('tags', function() {
+    this.route('show', { path: '/:tag_id' });
+  });
 });
 
 export default Router;
